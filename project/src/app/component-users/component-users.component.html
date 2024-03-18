@@ -1,0 +1,4 @@
+<div>
+    <button (click)="handleClick()">Click me</button>
+    <ul *ngIf="toggle==true"><li *ngFor="let user of usersData">{{user.name+" "+user.age}}</li></ul>
+</div>
