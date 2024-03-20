@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component ,OnDestroy, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -12,5 +12,11 @@ export class HomeComponent {
     console.log('clicked');
     this.toggle=!this.toggle;
     console.log(this.toggle);
+  }
+  OnDestroy() {
+    console.log('destroyed')
+  }
+  OnInit() {
+    console.log('on init ');
   }
 }

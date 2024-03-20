@@ -1,0 +1,15 @@
+div {
+    display :flex;
+    justify-content: center;
+    background-color: aqua;
+    justify-content: space-evenly;
+    align-items: center;
+}
+button {
+    display: inline-block;
+    height:80px;
+
+}
+li {
+    list-style: none;
+}
