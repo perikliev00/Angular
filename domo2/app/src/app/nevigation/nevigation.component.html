@@ -1,0 +1,8 @@
+<div>
+    <button (click)="handleToggle()">Click</button>
+    <span *ngIf="toggle==true">
+        <ul>
+            <li *ngFor="let user of arr">{{user.name + ' ' + user.age}}</li>
+        </ul>
+    </span>
+</div>

@@ -1,0 +1,8 @@
+div {
+    background-color: burlywood;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    height: 150px;
+}
