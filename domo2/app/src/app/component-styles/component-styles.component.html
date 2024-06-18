@@ -1,0 +1,6 @@
+<div (mouseenter)="changeColor('green')" (mouseleave)="changeColor('black')"[style.color]="textColor">Hello world!
+    <input #text>
+    <button (click)="clickForImg(text.value)">Click for img</button>
+    <img [attr.src]="imgUrl">
+    <button (click)="sendMessege()">Sent Messege</button>;
+</div>

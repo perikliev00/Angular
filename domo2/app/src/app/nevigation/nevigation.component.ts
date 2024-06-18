@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { NgIf,NgFor} from '@angular/common';
 import { NgForOf } from '@angular/common';
-
+import { Input } from '@angular/core';
 @Component({
   selector: 'app-nevigation',
   standalone: true,
@@ -10,11 +10,13 @@ import { NgForOf } from '@angular/common';
   styleUrl: './nevigation.component.css'
 })
 export class NevigationComponent {
+  @Input()myArr:any='';
   tittle="My Variable"
   toggle=false;
   handleToggle() {
     this.toggle=!this.toggle
     console.log(this.toggle);
+    console.log(this.myArr);
   }
   arr= [
     {name:"alex",age:"21"},
